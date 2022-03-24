@@ -1,0 +1,41 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/login/login",
+        "pages/shopping/shopping",
+        "pages/info/info",
+        "pages/classtype/classtype"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "小宝商城",
+        "navigationBarTextStyle": "black"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "tabBar": {
+        "list": [{
+            "pagePath": "pages/index/index",
+            "text": "主页",
+            "iconPath": "images/tab-home.png",
+            "selectedIconPath": "images/tab-home-current.png"
+        },{
+            "pagePath": "pages/shopping/shopping",
+            "text": "购物车",
+            "iconPath": "images/tab-cart.png",
+            "selectedIconPath": "images/tab-cart-current.png"
+        },
+        {
+            "pagePath": "pages/classtype/classtype",
+            "text": "分类",
+            "iconPath": "images/tab-cate.png",
+            "selectedIconPath": "images/tab-cate-current.png"
+        },{
+            "pagePath": "pages/login/login",
+            "text": "我的",
+            "iconPath": "images/tab-my.png",
+            "selectedIconPath": "images/tab-my-current.png"
+        }]
+    }
+}

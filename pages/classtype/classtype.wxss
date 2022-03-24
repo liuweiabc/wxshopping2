@@ -1,0 +1,39 @@
+/* pages/classtype/classtype.wxss */
+.container{
+    display:flex;
+    flex-direction: row;
+    width:100%
+}
+
+.classtype{
+    display: flex;
+    flex-direction: column;
+    width:20%;
+    align-items: center;
+    background-color: teal;
+}
+
+.classtype .type{
+    margin:10rpx 10rpx;
+    color: white;
+}
+
+.productlist{
+    display:flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.productlist .product{
+    display: flex;
+    flex-direction: row;
+}
+.product image{
+    width:260rpx;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

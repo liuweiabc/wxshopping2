@@ -1,0 +1,35 @@
+<!--pages/info/info.wxml-->
+<swiper indicator-dots circular autoplay>
+    <swiper-item>
+        <video src="https://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400">
+        </video>
+    </swiper-item>
+    <swiper-item>
+        <image src="/images/mate30pro01.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+        <image src="/images/mate30pro02.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+        <image src="/images/mate30pro03.jpg"></image>
+    </swiper-item>
+</swiper>
+
+<view class="info">
+    <text class="name">华为mate30pro</text>
+    <text class="price">3099</text>
+</view>
+<scroll-view scroll-y>
+    <text class="details">产品详情介绍</text>
+
+<view class="picture">
+    <image src="/images/detail01.png" mode="widthFix"></image>
+    <image src="/images/detail02.png" mode="widthFix"></image>
+    <image src="/images/detail03.png" mode="widthFix"></image>
+</view>
+</scroll-view>
+
+<view class="btn">
+    <button class="add" bindtap="addCar">加入购物车</button>
+    <button class="buy">立即购买</button>
+</view>

@@ -1,0 +1,34 @@
+/* pages/shopping/shopping.wxss */
+
+.productlist{
+    display: flex;
+    flex-direction: column;
+}
+
+.productlist .product{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    font-size: 30rpx;
+}
+
+image{
+    width:200rpx;
+}
+
+.checkall{
+    display: flex;
+    flex-direction: row;
+}
+
+.check{
+    position: fixed;
+    left:0;
+    bottom:0;
+}

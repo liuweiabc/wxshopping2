@@ -1,0 +1,17 @@
+<!--pages/classtype/classtype.wxml-->
+<view class="container">
+    <view class="classtype">
+        <view id = "{{item.id}}" class="type" bindtap="classquery" wx:for="{{typelist}}" wx:key="{{index}}">
+            <text class="typename">{{item.name}}</text>
+        </view>
+    </view>
+    <view class="productlist">
+        <view class="product" wx:for="{{productlist==''?productlistAll:productlist}}" wx:key="{{index}}">
+            <image src="{{item.src}}" mode="widthFix"></image>
+            <view class="info">
+                <text class="name">{{item.name}}</text>
+                <text class="price">{{item.price}}</text>
+            </view>
+        </view>
+    </view>
+</view>

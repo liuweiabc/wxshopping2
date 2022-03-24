@@ -1,0 +1,17 @@
+<!--pages/shopping/shopping.wxml-->
+<scroll-view class="productlist">
+    <view class="product" wx:for="{{productList}}" wx:key="{{index}}">
+        <image src="{{item.src}}" mode="widthFix"></image>
+        <view class="info">
+            <text class="name">{{item.name}}</text>
+            <text class="price">{{item.price}}</text>
+        </view>
+        <checkbox-group bindchange="judgeChange" id="{{item.id}}">
+            <checkbox class="choose" value="{{item.id}}"></checkbox>
+        </checkbox-group>
+    </view>
+</scroll-view>
+<view class="checkall">
+    <button class="check">点击结算 <text class="priceall">¥{{sumprice}}</text></button>
+   
+</view>

@@ -1,0 +1,35 @@
+<!--index.wxml-->
+<view class="container">
+  <swiper circular autoplay indicator-dots>
+    <swiper-item>
+    <image src="/images/temp/banner1.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+    <image src="/images/temp/banner2.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+    <image src="/images/temp/banner3.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+    <image src="/images/temp/banner4.jpg"></image>
+    </swiper-item>
+  </swiper>
+
+  <view class="nav">
+    <view class = "menu" wx:for="{{navlist}}" wx:key="{{index}}">
+      <image class src="{{item.src}}"></image>
+      <text>{{item.title}}</text>
+    </view>
+  </view>
+
+  <text class="hot">热卖产品</text>
+  <view class="wrap">
+    <navigator class="product" wx:for="{{productlist}}" wx:key="{{index}}" url="/pages/info/info?id={{item.id}}">
+      <image src="{{item.src}}" mode="widthFix"></image>
+      <view class="info">
+        <text class="name">{{item.name}}</text>
+        <text class="price">{{item.price}}</text>
+      </view>
+    </navigator>
+  </view>
+</view>
